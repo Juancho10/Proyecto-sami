@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Fabrica Sanyo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <!--materialeze enlace para los estilos-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="encabezado inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra-inicio">
+                <a href="/">
+                    <div class="logo">
+                        <h2>MUEBLES</h2>
+                        <h2>SANYO</h2>
+                    </div>
+                </a>
+
+                <div class="mobile-menu">
+                    <!-- en el href para enlazar a un id se coloca el numeral y luego el nombre del id -->
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="icono menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="">Nosotros</a>
+                    <a href="">Contactanos</a>
+                    <a href="">Productos</a>
+                    <a href=""></a>
+                </nav>
+            </div>
+            <h1>Ventas de Muebles de la<span>Mejor Calidad y de Lujo</span></h1>
+        </div>
+    </header>
+    <!--seccion del slide de imagenes sobre nuestros trabajos-->
+
+    <section class="contenedor seccion seccion-slide">
+        <h2 class="fw-300  centrar-texto">Conoce Nuestros Trabajos</h2>
+        <div class="container">
+            <div class="container-all">
+                <!--en esta seccion se utiliza para que cuando se seleccione la seccion pueda quedar estatica y no se nos mueva-->
+                <input type="radio" id="1" name="imagen-del-slide" hidden>
+                <input type="radio" id="2" name="imagen-del-slide" hidden>
+                <input type="radio" id="3" name="imagen-del-slide" hidden>
+                <input type="radio" id="4" name="imagen-del-slide" hidden>
+                <!--esta seccion es donde se colocan las imageneb que se trasmitiran en el slide-->
+                <div class="slide">
+                    <div class="item-slide">
+                        <img src="img/slide1.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slide2.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slide3.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slide4.jpg">
+                    </div>
+                </div>
+                <!--esta son los iconos para correr a la imagen preferida-->
+                <div class="paginacion-imagenes">
+                    <label class="paginacion-item" for="1">
+                        <img src="img/slide1.jpg">
+                    </label>
+                    <label class="paginacion-item" for="2">
+                        <img src="img/slide2.jpg">
+                    </label>
+                    <label class="paginacion-item" for="3">
+                        <img src="img/slide3.jpg">
+                    </label>
+                    <label class="paginacion-item" for="4">
+                        <img src="img/slide4.jpg">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion De Productos-->
+    <main class="contenedor seccion">
+        <h2 class="centrar-texto fw-300"> Nuestros Productos</h2>
+        <div class="seccion-productos">
+            <div class="productos-sala">
+                <a href="#">
+                    <img src="img/producto1.png" alt="productos de sala">
+                </a>
+                <h2 class="centrar-texto">Salas</h2>
+            </div>
+            <div class="productos-sala">
+                <a href="#">
+                    <img src="img/producto7.jpg" alt="productos de sala">
+                </a>
+                <h2 class="centrar-texto">Sillas</h2>
+            </div>
+        </div>
+    </main>
+    <div class="seccion">
+        <h2 class="centrar-texto fw-300">Encuentranos Aqui</h2>
+        <a href="#">
+            <div class="encuentranos">
+                <img src="img/encuentranos.png" alt="encuentranos aqui">
+            </div>
+        </a>
+        <div class="contenedor">
+            <a href="#">
+                contactanos
+            </a>
+        </div>
+    </div>
+    <footer class="seccion seccion-footer">
+        <div class="contenedor contenido-footer">
+            <nav class="navegacion">
+                <a href="">Nosotros</a>
+                <a href="">Contactanos</a>
+                <a href="">Productos</a>
+                <a href=""></a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados&copy; 2020</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
