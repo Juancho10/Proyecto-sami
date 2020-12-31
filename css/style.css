@@ -75,7 +75,12 @@ img {
   }
 }
 .contenido-header h1 {
-  color: #ffffff;
+  color: #505050;
+}
+@media (min-width: 768px) {
+  .contenido-header h1 {
+    color: #ffffff;
+  }
 }
 .contenido-header h1 span {
   display: block;
@@ -122,7 +127,7 @@ img {
   }
 }
 
-/** Mobile menu de hamburguesa **/
+/** Mobile menu de hamburguesa 
 
 .mobile-menu img {
   width: 5rem;
@@ -146,7 +151,7 @@ img {
     display: block;
   }
 }
-
+**/
 /** nuestros trabajos , seccion slide**/
 .container {
   display: flex;
