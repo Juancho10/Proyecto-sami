@@ -43,6 +43,21 @@ img {
   text-align: center;
 }
 
+.boton {
+  text-align: center;
+  background-color: #35a818;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  color: #ffffff;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+}
 /** header*/
 .encabezado.inicio {
   background-image: url(../img/inicio.jpg);
@@ -291,6 +306,7 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
   }
 }
 .productos-sala {
@@ -311,4 +327,14 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
   font-family: fantasy;
   color: rgba(99, 26, 6, 1);
   margin-top: 0;
+}
+/** Seccion contactanos **/
+.encuentranos {
+  margin-bottom: 2rem;
+}
+
+/** seccion footer **/
+.seccion-footer {
+  background-color: #3a240a;
+  margin: 0;
 }
