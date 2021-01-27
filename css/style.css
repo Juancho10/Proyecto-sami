@@ -45,12 +45,15 @@ img {
 
 .boton {
   text-align: center;
-  background-color: #35a818;
+  background-color: #1be6e6;
   text-decoration: none;
   font-weight: 700;
   padding: 2rem 4rem;
   color: #ffffff;
   display: block;
+}
+.boton:hover {
+  color: #3a240a;
 }
 
 @media (min-width: 768px) {
@@ -90,11 +93,11 @@ img {
   }
 }
 .contenido-header h1 {
-  color: #505050;
+  color: rgb(0, 0, 0);
 }
 @media (min-width: 768px) {
   .contenido-header h1 {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
   }
 }
 .contenido-header h1 span {
@@ -172,13 +175,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3.8rem;
+  padding-bottom: 3.8rem;
 }
 
 .container-all {
   position: relative;
-  max-width: 100rem;
-  width: 100%;
   border-radius: 0.6rem;
   overflow: hidden;
 }
@@ -192,6 +193,7 @@ img {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
+
 .item-slide {
   position: relative;
   display: flex;
@@ -200,7 +202,13 @@ img {
   flex-grow: 0;
   max-width: 100%;
   background-image: center center;
-  width: 1000vh;
+  width: 2000vh;
+}
+@media (min-width: 768px) {
+  .item-slide img {
+    max-height: 100%;
+    height: 60rem;
+  }
 }
 .paginacion-imagenes {
   position: absolute;
@@ -306,7 +314,6 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
   }
 }
 .productos-sala {
@@ -317,7 +324,7 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
 }
 @media (min-width: 768px) {
   .productos-sala {
-    flex: 0 0 calc(45% - 1rem);
+    flex: 0 0 calc(33.3% - 2rem);
   }
 }
 .productos-sala:hover {
@@ -337,4 +344,18 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
 .seccion-footer {
   background-color: #3a240a;
   margin: 0;
+}
+.contenido-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenido-footer nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .contenido-footer nav {
+    display: block;
+    padding-top: 2rem;
+  }
 }
