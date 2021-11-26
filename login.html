@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Fabrica Sanyo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <!--materialeze enlace para los estilos-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor contenido-header">
+            <div class="barra-inicio">
+                <a href="/">
+                    <div class="logo">
+                        <h2>MUEBLES</h2>
+                        <h2>SANYO</h2>
+                    </div>
+                </a>
+                <!--
+                <div class="mobile-menu">
+                    en el href para enlazar a un id se coloca el numeral y luego el nombre del id 
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="icono menu">
+                    </a>
+                    
+                </div>
+                -->
+                
+                <nav class="navegacion">
+                    <a href="">Nosotros</a>
+                    <a href="">Contactanos</a>
+                    <a href="">Productos</a>
+                    <a href="">Mi Cuenta</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--seccion del slide de imagenes sobre nuestros trabajos-->
+    <main class="contenedor seccion">
+        <h2 class="centrar-texto fw-300">Bienvenido</h2>
+        <form action="login.php" method="post">
+            <fieldset>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña">
+                <input type="submit" value="Ingresar">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer class="seccion seccion-footer">
+        <div class="contenedor contenido-footer">
+            <nav class="navegacion">
+                <a href="">Nosotros</a>
+                <a href="">Contactanos</a>
+                <a href="">Productos</a>
+                <a href="">Mi Cuenta</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados&copy; 2020</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
