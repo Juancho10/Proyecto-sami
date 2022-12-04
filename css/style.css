@@ -326,6 +326,7 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
   }
 }
 .productos-sala {
+  max-height: 20rem;
   background-color: #d8d7d7;
   padding: 3rem;
   border: 2px #b5b5b5 solid;

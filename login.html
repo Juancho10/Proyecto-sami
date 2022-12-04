@@ -46,11 +46,11 @@
     <!--seccion del slide de imagenes sobre nuestros trabajos-->
     <main class="contenedor seccion">
         <h2 class="centrar-texto fw-300">Bienvenido</h2>
-        <form action="login.php" method="post">
+        <form action="/controller/conexion.php" method="post">
             <fieldset>
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario">
-                <label for="contraseña">Contraseña</label>
+                <label for="usuario" id="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario">
+                <label for="contraseña" id="contraseña">Contraseña</label>
                 <input type="password" name="contraseña" id="contraseña">
                 <input type="submit" value="Ingresar">
 
@@ -68,6 +68,21 @@
             <p class="copyright">Todos los Derechos Reservados&copy; 2020</p>
         </div>
     </footer>
+
+    <?php
+    require(/controller/conexion.php);
+    if (isset($_POST["enviar"])) {
+        for ($i=0; $i < count($user);  $i++){
+            if ($_POST["usuario"]==$user[$i] && $pass[$i]==$_POST["contraseña"] && $rol[$i]==1) {
+                header('location: /index.html');
+            }elseif ($_POST["usuario"]==$user[$i] && $pass[$i]==$_POST["contraseña"] && $rol[$i]==2) {
+                header('location: /login.html');
+            }
+        }
+    }
+    
+    
+    ?>
 
 </body>
 
