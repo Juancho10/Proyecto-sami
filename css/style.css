@@ -45,16 +45,21 @@ img {
 
 .boton {
   text-align: center;
-  background-color: #1be6e6;
+  background-color: #bb9457;
   text-decoration: none;
   font-weight: 700;
-  padding: 2rem 4rem;
+  font-size: 2rem;
+  padding: 2rem 3rem;
   color: #ffffff;
   display: block;
   border-radius: 1rem ;
+  border: none;
+  max-height: 8rem;
 }
 .boton:hover {
-  color: #0a0d3a;
+  color: #6f1d1b;
+  background-color: #ffe6a7;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -71,7 +76,7 @@ img {
   min-height: 60rem;
 }
 .encabezado {
-  background: #3a240a;
+  background: #432818;
   padding: 1rem 0 3rem 0;
 }
 .contenido-header {
@@ -141,7 +146,7 @@ img {
   display: block;
 }
 .navegacion a:hover{
-  color:rgb(2, 6, 59);
+  color:#ffe6a7;
   text-decoration: underline;
 }
 @media (min-width: 768px) {
@@ -342,7 +347,7 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
 }
 .productos-sala h2 {
   font-family: fantasy;
-  color: rgba(99, 26, 6, 1);
+  color: #432818;
   margin-top: 0;
 }
 /** Seccion contactanos **/
@@ -352,7 +357,7 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
 
 /** seccion footer **/
 .seccion-footer {
-  background-color: #000000;
+  background-color: #432818;
   margin: 0;
 }
 .contenido-footer {
@@ -368,4 +373,18 @@ input[id="4"]:checked ~ .paginacion-imagenes .paginacion-item[for="4"] {
     display: block;
     padding-top: 2rem;
   }
+}
+
+/*Login*/
+.contenedor_login{
+  max-width: 60rem;
+  background-color: #a98467;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 25%;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
 }
